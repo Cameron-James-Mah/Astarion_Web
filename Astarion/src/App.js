@@ -184,6 +184,7 @@ function App() {
 
   return (
     <>
+    <title>Astarion</title>
             <div style={{width: '35rem', display: 'block',marginLeft: 'auto', marginRight: 'auto', marginTop: '5rem', marginBottom: '5rem'}}>
                 <Chessboard position={game.fen()} id="BasicBoard" onPromotionPieceSelect={promocheck} onPieceDrop={onDrop} boardOrientation={color.current} />
             </div>
