@@ -10,10 +10,11 @@ function App() {
   
   return (
     <>
-            <div>
+            <div className='main-container'>
               <h1>Astarion</h1>
               <Popup setColor={setColor} setDifficulty={setDifficulty}></Popup>
               <Board color={color} difficulty={difficulty}></Board>
+              <a href="https://github.com/Cameron-James-Mah/Astarion_Web" target="_blank">Visit my repo</a>
             </div>
 
         </>
