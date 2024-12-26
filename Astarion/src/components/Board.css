@@ -1,0 +1,5 @@
+.board-container {
+    width: 90%;          /* Use 90% of the screen width */
+    max-width: 500px;    /* Limit the maximum width */
+    margin: 2rem auto 5rem auto; /* Center the chessboard with top and bottom spacing */
+  }
