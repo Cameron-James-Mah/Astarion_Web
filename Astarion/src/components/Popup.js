@@ -77,7 +77,7 @@ function Popup({setColor, setDifficulty}) {
                 Hard
               </button>
             </div>
-            <div className="color-options">
+            <div className="color-options2">
               <button onClick={handleStart}>
                 Start
               </button>

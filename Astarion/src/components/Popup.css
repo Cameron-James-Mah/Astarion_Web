@@ -34,6 +34,22 @@
     background-color: #ffd700; /* Highlight color (gold) */
     transform: scale(1.1); /* Slightly larger when selected */
   }
+
+  .color-options2 button {
+    background: green;
+    border-color: green;
+    cursor: pointer;
+    margin: 10px;
+    padding: 15px;
+    
+    transition: background-color 0.3s, transform 0.2s;
+    
+  }
+  
+  .color-options2 button.selected {
+    background-color: green; /* Highlight color (gold) */
+    transform: scale(1.1); /* Slightly larger when selected */
+  }
   
   .color-options img {
     width: 50px;
