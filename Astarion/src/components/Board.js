@@ -161,15 +161,15 @@ function Board({color, difficulty}) {
             //console.log(game.fen())
             let res;
             if(difficulty == "easy"){
-                res = core.ccall("engineMove", "string", ['string', 'number'], [game.fen(), 360000]);
+                res = core.ccall("engineMove", "string", ['string', 'number'], [game.fen(), 300000]);
                 //console.log("e") 
             }
             else if(difficulty == "medium"){
-                res = core.ccall("engineMove", "string", ['string', 'number'], [game.fen(), 720000]); 
+                res = core.ccall("engineMove", "string", ['string', 'number'], [game.fen(), 600000]); 
                 //console.log("m") 
             }
             else if(difficulty == "hard"){
-                res = core.ccall("engineMove", "string", ['string', 'number'], [game.fen(), 1080000]); 
+                res = core.ccall("engineMove", "string", ['string', 'number'], [game.fen(), 900000]); 
                 //console.log("h") 
             }
 
@@ -258,6 +258,7 @@ function Board({color, difficulty}) {
             onPromotionPieceSelect={promocheck}
             onPieceDrop={onDrop}
             boardOrientation={color}
+            animationDuration={500}
         />
         </div>
             {gameOver && <GameOverPopup result={result} onClose={() => setGameOver(false)} />}
